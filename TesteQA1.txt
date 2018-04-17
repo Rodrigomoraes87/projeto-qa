@@ -1,0 +1,27 @@
+# language: pt
+Funcionalidade: Enviar mensagens
+	Como usuário do aplicativo
+	Preciso enviar mensagens
+	Com o objetivo de contactar amigos
+
+	Contexto: 
+		Dado que possuo um amigo festeiro
+		E vou dar uma festa em casa
+	
+	
+	Cenário: Enviar uma mensagem com todas as informações preenchidas
+		Dado que confecciono a mensagem
+		Quando envio a mensagem com convite e endereço
+		Então meu amigo saberá que há uma festa e poderá comparecer
+
+	
+	Cenário: Enviar uma mensagem sem o endereço
+		Dado que confecciono a mensagem
+		Quando envio a mensagem com convite mas sem endereço
+		Então meu amigo saberá que há uma festa porém não poderá comparecer
+
+
+	Cenário: Enviar uma mensagem sem o convite
+		Dado que confecciono a mensagem
+		Quando envio a mensagem com endereço mas sem convite
+		Então meu amigo não saberá que há uma festa e não poderá comparecer	
